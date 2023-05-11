@@ -16,6 +16,14 @@
   }
 }
 
+body {
+  font-family: 'Inter', sans-serif;  
+}
+
 .navigation:hover .navigation-item {
   display: block !important;
+}
+th, td{
+  padding-top: 11px;
+  padding-bottom: 11px;
 }

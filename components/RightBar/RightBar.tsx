@@ -24,7 +24,7 @@ const RightBar = () => {
         { imageUrl: 'rightBar/8.svg', content: 'Koray Okumus' },
     ];
     return (
-        <div className='flex flex-col px-6 pt-[26px] gap-7'>
+        <div className='flex flex-col px-6 mr-6 py-[26px] gap-7'>
             <RightBarItem title='Notifications' items={notiItems} />
             <RightBarItem title='Activities' items={actiItems} />
             <RightBarItem title='Contacts' items={contItems} />
