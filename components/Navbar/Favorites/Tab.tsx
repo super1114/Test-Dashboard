@@ -8,7 +8,7 @@ const Tab = () => {
         setIsActive(tab);
     }
     return (
-        <div className='flex'>
+        <div className='flex   px-3'>
             <p className={`cursor-pointer pr-5 ${isActive ? "text-grey-text" : "text-grey-placeholder"}`}
                 onClick={() => handleClick(true)}>Favorites</p>
             <p className={`cursor-pointer ${!isActive ? "text-grey-text" : "text-grey-placeholder"}`}

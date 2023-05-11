@@ -24,7 +24,7 @@ export default function MainHeader() {
                     <Image src='mainHeader/Bell.svg' width='20' height='20' alt='Not Found' />
                     <Image src='mainHeader/Sidebar.svg' width='20' height='20' alt='Not Found' />
                     {/* Toggle the dashboard show */}
-                    <MenuIcon className="max-sm:block sm:hidden h-5 w-5" onClick={toggleNav} />
+                    <MenuIcon className="max-lg:block lg:hidden h-5 w-5" onClick={toggleNav} />
                 </div>
             </div>
         </div>
