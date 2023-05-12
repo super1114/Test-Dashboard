@@ -1,5 +1,8 @@
 import React, { createContext } from 'react';
 
-type StringOrNeverArray = string[] | never[];
+// interface MyContextValue {
+//     valueArray: string[];
+//     setValueArray: (newValue: string[]) => void;
+// }
 
-export const ValueContext = createContext({ valueContent: [] as StringOrNeverArray, concatValue: (val: string) => { } });
+export const ValueContext = createContext({ valueContent: ['0'], setValueArray: (val: string[]) => { } });

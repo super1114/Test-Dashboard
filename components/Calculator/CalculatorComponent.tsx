@@ -5,22 +5,29 @@ import ButtonBoard from './ButtonBoard'
 import ToggleMode from './ToggleMode'
 
 import { ValueContext } from '@/contexts/ValueContext'
+import { ResultContext } from '@/contexts/ResultContext'
 
 const CalculatorComponent = () => {
-    const [valueContent, setValue] = useState<string[]>([]);
+    const [valueContent, setValueContent] = useState<string[]>([]);
+    const [resultContent, setResultContent] = useState<string[]>([]);
 
-    const concatValue = (val: string) => {
-        setValue([...valueContent, val]);
+    const setValueArray = (newArray: string[]) => {
+        setValueContent(newArray);
+    };
+    const setResultArray = (newArray: string[]) => {
+        setResultContent(newArray);
     };
     return (
-        <ValueContext.Provider value={{ valueContent, concatValue }}>
-            <div className='flex flex-col items-center px-5 w-[375px] h-full ' >
-                <ToggleMode />
-                <Expression />
-                <ResultDisp />
-                <ButtonBoard />
-            </div>
-        </ValueContext.Provider>
+        <ResultContext.Provider value={{ resultContent, setResultArray }}>
+            <ValueContext.Provider value={{ valueContent, setValueArray }}>
+                <div className='flex flex-col items-end px-5 w-[375px] h-full ' >
+                    <ToggleMode />
+                    <Expression />
+                    <ResultDisp />
+                    <ButtonBoard />
+                </div>
+            </ValueContext.Provider>
+        </ResultContext.Provider>
     )
 }
 
