@@ -33,8 +33,9 @@ const Button = ({ typeBtn, value, isIcon, iconUrl, typeOperator }: Props) => {
       setValueArray([...valueTemp]);
     } else {
       if (typeOperator) {
-        // valueTemp = [...tempArray];
-        // valueTempCalc = [...tempCalcArray];
+        //Only Operators
+
+        //Clear btn
         if (value === 'C') {
           valueTempCalc = ['0'];
           valueTemp = ['0'];
@@ -42,18 +43,17 @@ const Button = ({ typeBtn, value, isIcon, iconUrl, typeOperator }: Props) => {
           tempCalcArray.length = 0;
           setResultArray([...valueTempCalc]);
         } else if (value === 'del') {
+          //Del btn
           tempArray.length--;
           tempCalcArray.length--;
           valueTemp = [...tempArray];
-          // valueTempCalc = [...tempCalcArray];
         } else {
           if (isNaN(parseInt(tempArray[tempArray.length - 1], 10))) {
+            //Validate the input
             tempArray[tempArray.length - 1] = value;
             if (value === '×') value = '*';
             if (value === '÷') value = '/';
             tempCalcArray[tempArray.length - 1] = value;
-            // valueTemp = [...tempArray];
-            // valueTempCalc = [...tempCalcArray];
           } else {
             {
               if (value === '÷') {
@@ -68,7 +68,6 @@ const Button = ({ typeBtn, value, isIcon, iconUrl, typeOperator }: Props) => {
             }
           }
           valueTemp = [...tempArray];
-          // valueTempCalc = [...tempCalcArray];
         }
 
       } else {
@@ -80,9 +79,6 @@ const Button = ({ typeBtn, value, isIcon, iconUrl, typeOperator }: Props) => {
         setResultArray([...valueTempCalc]);
       }
     }
-    // valueTemp = [...tempCalcArray];
-    // valueTemp[valueTemp.length - 1] = 'fox'
-
     setValueArray([...valueTemp]);
   }
   return (
