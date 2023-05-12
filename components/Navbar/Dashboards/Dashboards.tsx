@@ -1,14 +1,6 @@
 import React from 'react'
 import DashboardItem from './DashboardItem'
 
-// interface propsItem {
-//     imageUrl: string;
-//     text: string;
-// }
-// interface propsItems {
-//     items: propsItem[]
-// }
-
 const Dashboards = () => {
     const dashItems = [
         { imageUrl: 'ChartPieSlice.svg', text: 'Default' },

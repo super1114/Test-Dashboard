@@ -27,12 +27,21 @@ module.exports = {
         'grey-border': 'rgba(0, 0, 0, 0.1)',
         'grey-hover': 'rgba(0, 0, 0, 0.05)',
         'grey-text': 'rgba(0, 0, 0, 0.4)',
+        'white-text': 'rgba(255, 255, 255, 0.4)',
         'grey-placeholder': 'rgba(0, 0, 0, 0.2)',
         'main-content': '#F7F9FB',
         'progress-text': '#8A8CD9',
         'competed-text': '#4AA785',
         'approved-text': '#FFC555',
-        'pending-text': '#59A8D4'
+        'pending-text': '#59A8D4',
+
+        'btn-purple': '#4B5EFC',
+        'operator-dark': '#4E505F',
+        'operator-light': '#D2D3DA',
+        'value-dark': '#2E2F38',
+        'value-light': '#FFFFFF',
+        'dark-back': '#17171C',
+        'light-back': '#F1F2F3'
       }
     },
   },

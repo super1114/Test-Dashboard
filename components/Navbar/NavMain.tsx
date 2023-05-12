@@ -2,6 +2,7 @@ import React from 'react'
 import Favorites from './Favorites/Favorites'
 import Dashboards from './Dashboards/Dashboards'
 import Pages from './PagesComponent/Pages'
+import CalcLink from './CalcLink/CalcLink'
 
 export default function NavMain() {
     return (
@@ -9,6 +10,7 @@ export default function NavMain() {
             <Favorites />
             <Dashboards />
             <Pages />
+            <CalcLink />
         </div>
     )
 }

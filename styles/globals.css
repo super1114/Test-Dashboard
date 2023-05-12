@@ -16,10 +16,20 @@
   }
 }
 
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+  /* add additional font weights and styles as necessary */
+}
+
 body {
   font-family: 'Inter', sans-serif;  
 }
 
+.calc {
+ color: red;
+  font-family: 'Work Sans', sans-serif !important;
+}
 .navigation:hover .navigation-item {
   display: block !important;
 }
