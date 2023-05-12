@@ -35,7 +35,7 @@ const DashboardItem = ({ items }: PropsItems) => {
         <div className="flex flex-col ml-[-5px] pt-3 space-y-3">
             {items.map((item: PropsItem, index: number) => (
                 <div key={index} className="flex flex-col">
-                    <div className='flex items-center px-3'>
+                    <div className='flex items-center px-3 hover:bg-grey-hover rounded-lg'>
                         <Image
                             src={images[currentIndex[index]]}
                             alt={currentIndex[index] === 0 ? 'AA Image' : 'BB Image'}

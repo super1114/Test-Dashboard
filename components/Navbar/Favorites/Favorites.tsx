@@ -5,7 +5,7 @@ import List from './List'
 const Favorites = () => {
     let menuItems = ['Overview', 'Projects'];
     return (
-        <div className='flex flex-col text-sm  px-3'>
+        <div className='flex flex-col text-sm'>
             <Tab />
             <List items={menuItems} />
         </div>

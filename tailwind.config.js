@@ -13,6 +13,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       screens: {
+        'coffee-h': { 'min': '1242px' },
+        'coffee-l': { 'max': '1241px' },
+        'max-lg': { 'max': '1023px' },
         'max-sm': { 'max': '639px' },
         'max-ss': { 'max': '480px' },
         'max-xs': { 'max': '370px' }
