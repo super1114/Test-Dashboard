@@ -8,7 +8,6 @@ import NavContext from '@/contexts/NavContext';
 export default function MainHeader() {
 
     const { showNav, toggleNav } = useContext(NavContext);
-    console.log(showNav, '>>>>>>');
     return (
         <div className='flex lg:flex-row flex-col max-sm:px-3 justify-between sm:px-[34px] py-[22px] border-b border-b-grey-border'>
             <div className='flex max-ss:justify-center items-center'>

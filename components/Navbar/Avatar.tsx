@@ -6,7 +6,6 @@ interface imageProps {
     name: string;
 }
 const Avatar = ({ imageUrl, name }: imageProps) => {
-    console.log(imageUrl);
     return (
         <div className='flex w-full px-[26px] items-center'>
             <Image

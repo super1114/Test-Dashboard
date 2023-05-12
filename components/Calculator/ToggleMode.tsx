@@ -17,10 +17,9 @@ const ToggleMode = () => {
                 toggleTheme();
             }
         } else {
-            console.log('box', box)
+            console.log('error')
         }
     }
-    console.log(theme);
     return (
         <div className='flex w-full justify-center'>
             <div className={`${theme === 'light' ? 'bg-white' : 'bg-value-dark'} relative flex justify-between px-1 py-1 w-[72px] h-8 rounded-2xl cursor-pointer`} onClick={handleToggler}>
